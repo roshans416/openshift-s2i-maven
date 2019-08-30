@@ -5,9 +5,8 @@ MAINTAINER Rabbit <380303318@qq.com>
 
 EXPOSE 8080
 
-ENV TOMCAT_VERSION=8.5.41 \
+ENV TOMCAT_VERSION=8.5.45 \
     MAVEN_VERSION=3.5.4
-
 LABEL io.k8s.description="Platform for building and running JEE applications on Tomcat" \
       io.k8s.display-name="Tomcat Builder" \
       io.openshift.expose-services="8080:http" \
