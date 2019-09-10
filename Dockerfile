@@ -29,7 +29,7 @@ RUN INSTALL_PKGS="tar java-1.8.0-openjdk java-1.8.0-openjdk-devel" && \
  
  # Install Docker
  
- RUN yum install docker -y
+# RUN yum install docker -y
 
 # Add s2i customizations
 ADD ./contrib/settings.xml $HOME/.m2/
