@@ -26,6 +26,10 @@ RUN INSTALL_PKGS="tar java-1.8.0-openjdk java-1.8.0-openjdk-devel" && \
     (curl -v http://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-8/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz | tar -zx --strip-components=1 -C /tomcat) && \
     rm -rf /tomcat/webapps/* && \
     mkdir -p /opt/s2i/destination
+ 
+ # Install Docker
+ 
+ RUN yum install docker -y
 
 # Add s2i customizations
 ADD ./contrib/settings.xml $HOME/.m2/
