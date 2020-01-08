@@ -43,7 +43,7 @@ configure_mirrors
 if [ -n "$MAVEN_PROFILE" ]; then
     mvn package -P$MAVEN_PROFILE -Dmaven.test.skip=true
 else
-    mvn -Dmaven.test.skip=true package
+    mvn -Dmaven.test.skip=true deploy
 fi
 
 mv ./target/*.war /tomcat/webapps/
