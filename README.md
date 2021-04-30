@@ -1,6 +1,11 @@
 
 # Creating a basic S2I builder image  
 
+
+## Purpose
+
+Use this repo to create an OpenShift S2I builder image for Maven projects. Please read the following sections to understand how S2I works.
+
 ## Getting started  
 
 ### Files and Directories  
